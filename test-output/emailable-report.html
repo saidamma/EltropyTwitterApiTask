@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">1</td><td class="num">354,718</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.eltropy.twitterApi.TwitterSeleniumExecution</td><td><a href="#m0">top10MostReTweetsTest</a></td><td rowspan="1">1614066442477</td><td rowspan="1">23141</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.eltropy.twitterApi.TwitterApiExecution</td><td><a href="#m1">top10FriendsWithMaxNumberOfFollowers</a></td><td rowspan="1">1614066308336</td><td rowspan="1">3999</td></tr><tr class="passedeven"><td><a href="#m2">twitterApiToGetTop10MostReTweetsCount</a></td><td rowspan="1">1614066312335</td><td rowspan="1">4014</td></tr><tr class="passedeven"><td><a href="#m3">twitterApiToGetuserTweetsList</a></td><td rowspan="1">1614066316365</td><td rowspan="1">81557</td></tr><tr class="passedeven"><td><a href="#m4">twitterApitoGetfriendsOfAuser</a></td><td rowspan="1">1614066397937</td><td rowspan="1">37150</td></tr><tr class="passedodd"><td rowspan="2">com.eltropy.twitterApi.TwitterSeleniumExecution</td><td><a href="#m5">user100FriendsListTest</a></td><td rowspan="1">1614066479872</td><td rowspan="1">112174</td></tr><tr class="passedodd"><td><a href="#m6">verifedAccountTest</a></td><td rowspan="1">1614066601395</td><td rowspan="1">51084</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.eltropy.twitterApi.TwitterSeleniumExecution#top10MostReTweetsTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@lang=&apos;en&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;NBLAP105&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\saidammad\AppData\Local\Temp\rust_mozprofiles2FZfI, rotatable=false, moz:geckodriverVersion=0.29.0, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=68.0.1, moz:shutdownTimeout=60000.0, platformVersion=10.0, moz:processID=5040.0, browserName=firefox, moz:buildID=20190717172542, javascriptEnabled=true, platformName=windows, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 38448fb4-7fb0-4d25-b228-33907c239656
+*** Element info: {Using=xpath, value=//div[@lang=&apos;en&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.getText(Unknown Source)
+	at com.eltropy.twitterApi.TwitterPageObject.getTweetTextData(TwitterPageObject.java:23)
+	at com.eltropy.twitterApi.TwitterSeleniumExecution.top10MostReTweetsTest(TwitterSeleniumExecution.java:117)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.eltropy.twitterApi.TwitterApiExecution#top10FriendsWithMaxNumberOfFollowers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.eltropy.twitterApi.TwitterApiExecution#twitterApiToGetTop10MostReTweetsCount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.eltropy.twitterApi.TwitterApiExecution#twitterApiToGetuserTweetsList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.eltropy.twitterApi.TwitterApiExecution#twitterApitoGetfriendsOfAuser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.eltropy.twitterApi.TwitterSeleniumExecution#user100FriendsListTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.eltropy.twitterApi.TwitterSeleniumExecution#verifedAccountTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
